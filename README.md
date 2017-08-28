@@ -4,7 +4,7 @@ This module shows the temperature and humidity of a HDC1080 Sensor by using the 
 
 
 ## Dependencies
-- Enable your I2C of the RaspberryPi by 
+- Enable your I2C of the RaspberryPi by going to Settings->RaspberryPi Configuration->interfaces->Enable I2C
 - An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
 - [WiringPi] (http://wiringpi.com/download-and-install/)
 
