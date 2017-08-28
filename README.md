@@ -18,7 +18,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ```
-git clone https://github.com/Bangee44/MMM-DHT22
+git clone https://github.com/MichaelF1/MMM-HDC1080
 ```
 
 Setup the address (default is 0x40) of your used I2C - HDC1080 Sensor in the ReadHDC1080.c-file at:
