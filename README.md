@@ -22,7 +22,9 @@ git clone https://github.com/MichaelF1/MMM-HDC1080
 ```
 
 Setup the address (default is 0x40) of your used I2C - HDC1080 Sensor in the ReadHDC1080.c-file at:
+```
 int iI2cAddress = 0x40; //put in your I2C-Address here
+```
 If you do not need to change the file you are fine now, but if you have to you have to compile it with:
 ```
 cc -Wall ReadHDC1080.c -o ReadHDC1080 -lwiringPi
