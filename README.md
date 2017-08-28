@@ -21,7 +21,7 @@ Clone this repository:
 git clone https://github.com/MichaelF1/MMM-HDC1080
 ```
 
-Setup the address (default is 0x40) of your used I2C - HDC1080 Sensor in the ReadHDC1080.c-file at:
+Setup the address (default is 0x40) of your used I2C - HDC1080 Sensor in the ReadHDC1080.c-file at ~/MagicMirror/modules/MMM-HDC1080/:
 ```
 int iI2cAddress = 0x40; //put in your I2C-Address here
 ```
