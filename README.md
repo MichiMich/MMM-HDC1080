@@ -1,6 +1,7 @@
 # MMM-HDC1080
 
-This module shows the temperature and humidity of a HDC1080 Sensor by using the I2C of the RaspberryPi and displays it at your MagicMirror²  https://github.com/MichMich/MagicMirror
+This module shows the temperature and humidity of a HDC1080 Sensor by using the I2C of the RaspberryPi and displays it at your MagicMirror²  https://github.com/MichMich/MagicMirror. The Pins 2 and 3 are used for I2C and can not be changed.
+The main function and code is from @Bangee44 where he used it for a DHT22-Sensor.
 
 
 ## Dependencies
@@ -18,6 +19,13 @@ cd ~/MagicMirror/modules
 Clone this repository:
 ```
 git clone https://github.com/Bangee44/MMM-DHT22
+```
+
+Setup the address (default is 0x40) of your used I2C - HDC1080 Sensor in the ReadHDC1080.c-file at:
+int iI2cAddress = 0x40; //put in your I2C-Address here
+If you do not need to change the file you are fine now, but if you have to you have to compile it with:
+```
+cc -Wall ReadHDC1080.c -o ReadHDC1080 -lwiringPi
 ```
 
 Navigate to the new `MMM-HDC1080` folder and make ReadHDC1080 executable.
@@ -65,8 +73,6 @@ The following properties can be configured:
 	<thead>
 	<tbody>
 		<tr>
-			<td><code>sensorPIN</code></td>
-			<td>GPIO PIN
         <br>
         <br>
         <b>Possible values:</b> wPi 
@@ -77,11 +83,11 @@ The following properties can be configured:
 
     <tr>
 			<td><code>updateInterval</code></td>
-			<td>Updateinterval for DHT22 sensor in minutes
+			<td>Updateinterval for HDC1080 sensor in minutes
         <br>
         <b>Possible values:</b> int 
         <br>
-				<b>Default value:</b> <code>0.5</code>
+				<b>Default value:</b> <code>0.5</code></b>
 			</td>
 		</tr>
 	</tbody>
