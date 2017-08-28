@@ -74,15 +74,6 @@ The following properties can be configured:
 		</tr>
 	<thead>
 	<tbody>
-		<tr>
-        <br>
-        <br>
-        <b>Possible values:</b> wPi 
-        <br>
-				<b>Default value:</b> <code>2</code>
-			</td>
-		</tr>
-
     <tr>
 			<td><code>updateInterval</code></td>
 			<td>Updateinterval for HDC1080 sensor in minutes
