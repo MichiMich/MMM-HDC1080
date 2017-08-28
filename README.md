@@ -1,7 +1,7 @@
 # MMM-HDC1080
 
 This module shows the temperature and humidity of a HDC1080 Sensor by using the I2C of the RaspberryPi and displays it at your MagicMirror²  https://github.com/MichMich/MagicMirror. The Pins 2 and 3 are used for I2C and can not be changed.
-The main function and code is from @Bangee44 where he used it for a DHT22-Sensor.
+The main function and code is from @Bangee44 (https://github.com/Bangee44/MMM-DHT22) where he used it for a DHT22-Sensor.
 
 
 ## Dependencies
