@@ -33,8 +33,8 @@ module.exports = NodeHelper.create({
 				  //console.log("Log: " + temp + " - " + hum);
 				  // Send Temperatur
 		          self.sendSocketNotification('DATA',{
-						temp: arr[1],
-						humidity: arr[0]
+						temp: arr[0],
+						humidity: arr[1]
 				  });
 			 });
 		   }
