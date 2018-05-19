@@ -27,7 +27,7 @@ int iI2cAddress = 0x40; //put in your I2C-Address here
 ```
 If you do not need to change the file you are fine now, but if you have to you have to compile it with:
 ```
-cc -Wall ReadHDC1080.c -o ReadHDC1080 -lwiringPi
+cc -Wall ReadHDC1080_Pi.c -o ReadHDC1080 -lwiringPi
 ```
 
 Navigate to the new `MMM-HDC1080` folder and make ReadHDC1080 executable.
